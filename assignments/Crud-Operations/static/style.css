@@ -1,0 +1,80 @@
+.user-form {
+    background-color: rgb(190, 226, 255);
+    padding: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tag {
+    font-size: medium;
+    text-align: right;
+}
+.user-form label{
+    margin: 10px;
+    display: inline-block;
+    padding: .5rem;
+}
+.user-form input{
+    display: inline-block;
+    border: 1px solid rgb(114, 141, 179) ;
+    padding: .3rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.user-form select {
+    margin: 10px;
+    padding: .5rem;
+    width: 100px;
+    border: none;
+    color: white;
+    background-color: rgb(115, 112, 250);
+}
+.user-form button{
+    margin: 10px;
+    padding: .5rem;
+    width: 100px;
+    border: 1px solid rgb(83, 82, 170);;
+    color: white;
+    background-color: rgb(115, 112, 250);
+}
+
+.user-form button:hover{
+    background-color: rgb(28, 88, 138);
+}
+
+.table{
+    background-color: rgb(190, 226, 255);
+    padding: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.centre th{
+    padding: 1rem;
+    border: 1px solid black;
+}
+.centre td{
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.delete {
+    background-color: rgb(196, 72, 72);
+}
+
+.delete:hover{
+    background-color: rgb(95, 33, 33);
+}
+
+.delete a{
+    color: white;
+}

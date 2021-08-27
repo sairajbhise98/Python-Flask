@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crud App</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <div>
+        <div class='user-form'>
+            <p><center>CRUD APP</center></p>
+            <form method="POST" action='/add'>
+                <p style="color: rgb(230, 0, 0);"><i>Note: Ignore ID field if you want to create a new User</i></p>
+                <label>Id</label>
+                <input type='text' name='id' id = 'id'/>
+                <label>Name</label>
+                <input type="text" name='name' id='name'/>
+                <label>Email</label>
+                <input type="email" name='email' id='email'/>
+                <br>
+                <select name='act' id='act'>
+                    <option value='create'>Create</option>
+                    <option value='update'>Update</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <p class="tag"><i>Created By Sairaj Bhise</i></p>
+        </div>
+        <br>
+        <hr style="width:70%;">
+        <br>
+        <div class="table">
+            <table class="centre">
+                <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                    {% for row in table %}
+                    <tr>
+                        <td>{{row.id}}</td>
+                        <td>{{row.username}}</td>
+                        <td>{{row.email}}</td>
+                        <td class="delete">
+                            <a href='/delete/{{row.id}}'>Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
